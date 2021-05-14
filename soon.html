@@ -67,7 +67,7 @@ hr {
           
         </div>
         <div class="middle"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <h1>COMING SOON</h1>
+          <h1>MERRY CHRISTMAS</h1>
           <hr><br>
           <b><p id="demo" style="font-size:30px"></p></b>
         </div>
@@ -77,7 +77,7 @@ hr {
       </div>
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("May 15, 2021 00:00:00").getTime();
+var countDownDate = new Date("Dec 25, 2021 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -107,32 +107,10 @@ var x = setInterval(function() {
 
 
 
-
-var maudio = document.getElementById('myaudio');
-
-var soundSprite = [
-  {start: 0, end: 3000},
-  {start: 3500, end: 6789}
-];
-
-element.addEventListener('touchstart', function(ev) {
-  maudio.play();
-  playSoundFile(0);
-})
-
-function playSoundFile(idx) {
-  maudio.currentPosition = soundSprite[idx].start;
-  var x = setInterval(function() {
-    if(maudio.currentPosition >= soundSprite[idx].end) {
-      maudio.pause(); // There is no stop() in HTML5
-      clearInterval(x);
-    }
-  }, 50);
-}
     </script>
     <div style="display:none">
-     <audio controls loop autoplay height="" width=""  id="myaudio">
-        <source src="music/chill.mp3" type="audio/mp3" />
+     <audio controls loop autoplay height="" width="">
+        <source src="music/sleighbells.mp3" type="audio/mp3" />
       </audio>
     </div>
 </body>
